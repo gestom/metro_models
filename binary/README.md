@@ -5,7 +5,6 @@ This repository contains an experimental scenario aimed at testing the predictiv
 The scenario is focused on modelling Bernoulli distributions over time. 
 For details, see [[1](#references)].
 
-The temporal models are a submodule, and therefore, you need to initialize it: **git submodule update --init --recursive**.
 To re-run the experiments, first go to the *src* folder and type **make** to compile the predictive framework.
 Edit the *src/models/test_models.txt* file to indicate, which models you want to evaluate.
 Then, go to the *eval_scripts* folder and type **make** to compile the **t-test** utility. 
