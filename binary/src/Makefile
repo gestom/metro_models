@@ -6,7 +6,7 @@ SUBDIRS+=main
 OBJS=$(wildcard ../obj/*.o)
 LXXLIBS+=-L/usr/local/lib
 LXXLIBS+=-lpython2.7 
-LXXLIBS+=-L/usr/local/lib -Llib -lgsl -lgslcblas -g `pkg-config opencv --libs`
+LXXLIBS+=-L/usr/local/lib -Llib -lgsl -lgslcblas 
 
 COPY_ETC_CMD=../etc/copy.sh
 COPY_ETC_SRC=../etc

@@ -6,7 +6,7 @@
 #include "CTimeMean.h"
 //#include "CMises.h"
 #include "CPythonHyperTime.h"
-#include "CHyperTime.h"
+//#include "CHyperTime.h"
 #include "CExpectation.h"
 
 const char *temporalModelName[] = 
@@ -15,7 +15,6 @@ const char *temporalModelName[] =
 	"Mean",
 	"Hist",
 	"FreMEn",
-	"HyT-EM",
 	"HyT-KM",
 	"Gaussian",
 	"Adaptive",
@@ -34,7 +33,7 @@ CTemporal* spawnTemporalModel(ETemporalType type,int maxPeriod,int elements,int 
 		case TT_MEAN: 		temporalModel = new CTimeMean(0);		break;
 		case TT_HISTOGRAM:	temporalModel = new CTimeHist(0);		break;
 		case TT_FREMEN: 	temporalModel = new CFrelement(0);		break;
-		case TT_HYPER: 		temporalModel = new CHyperTime(0);		break;
+//		case TT_HYPER: 		temporalModel = new CHyperTime(0);		break;
 		case TT_PYTHON: 	temporalModel = new CPythonHyperTime(0);	break;
 
 		case TT_PERGAM: 	temporalModel = new CPerGaM(0);			break;
